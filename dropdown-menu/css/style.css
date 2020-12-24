@@ -84,7 +84,7 @@ body{
     position: absolute;
     background-color:white;
     left: 0;
-    top: 55px;
+    margin-top: 1rem;
     width: 180px;
     display: none;
 }
