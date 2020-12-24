@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dropdown-menu/css/style.css">
+    <script src="https://kit.fontawesome.com/a07952b87e.js" crossorigin="anonymous"></script>
+    <title>CSS Dropdown menu</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="nested">Services <i class="fas fa-angle-down"></i>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Mobile Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+            <li class="nested">Blog <i class="fas fa-angle-down"></i>
+            <ul>
+                <li><a href="#">HTML<span>22 posts</span></a></li>
+                <li><a href="#">CSS<span>15 posts</span></a></li>
+                <li><a href="#">JavaScript<span>23 posts</span></a></li>
+                <li><a href="#">PHP<span>15 posts</span></a></li>
+                <li><a href="#">Design<span>16 posts</span></a></li>
+            </ul></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>    
+        <div class="showcase"></div>    
+    </header>
+</body>
+</html>

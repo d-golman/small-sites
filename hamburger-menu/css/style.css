@@ -1,0 +1,108 @@
+:root{
+    --slow:0.9s;
+    --medium:0.6s;
+    --fast:0.4s;
+}
+
+html{
+    scroll-behavior: smooth;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: justify;
+}
+
+#first-page{
+    background-color: lightsalmon;
+}
+#second-page{
+    background-color: lightcoral;
+}
+#third-page{
+    background-color: lightgreen;
+}
+
+.page h1{
+    text-align: center;
+    color:white;
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.2);
+    animation:arrive var(--fast) ease-in;
+    padding: 0 30px;
+}
+
+.page p{
+    color:white;
+    font-size: 1.4rem;
+    max-width: 1300px;
+    margin: 30px;
+    animation:arrive var(--medium) ease-in;
+}
+
+.btn{
+    border:none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px;
+    animation:arrive var(--slow) ease-in;
+}
+
+.btn-light{
+    background-color:white;
+    color: #333;
+    transition: all 0.2s ease-out;
+}
+
+.btn-light:hover{
+    background-color: #333;
+    color: white;
+}
+
+.btn-dark{    
+    background-color: #333;
+    color: white;
+    transition: all 0.2s ease-out;
+}
+
+.btn-dark:hover{
+    background-color:white;
+    color: #333;
+}
+
+@keyframes arrive{
+    from{
+        transform: translateX(-1000px);
+    }
+}
+
+@media (max-width: 700px){
+    .page h1{
+        font-size: 2rem;
+    }
+    
+    .page p{
+        font-size: 1rem;
+    } 
+}
